@@ -1,0 +1,40 @@
+.dark-mode-toggler {
+  height: 20px;
+  width: 40px;
+  background-color: var(--darkGray);
+  border-radius: 80px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.dark-mode-toggler:focus {
+  outline: var(--accent) 1px solid;
+}
+
+.dark-mode-toggler:before {
+  content: "";
+  margin: 0 2px;
+  height: 17px;
+  width: 17px;
+  background: var(--light);
+  border-radius: 80px;
+  transition: 0.5s;
+}
+
+body.dark-theme .dark-mode-toggler {
+  transition: background-color 0.6s;
+}
+
+body.dark-theme .dark-mode-toggler::before {
+  transform: translateX(112%);
+
+  transition: all 0.6s;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For medium devices */
+@media screen and (max-width: 768px) {
+}

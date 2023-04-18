@@ -1,0 +1,156 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap");
+:root {
+  --header-height: 3rem;
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --large-font-size: 2.8rem;
+  --big-font-size: 1.15rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.825rem;
+
+  /*========== Font weight ==========*/
+  --font-normal: 400;
+  --font-bold: 700;
+}
+
+/*========== Colors ==========*/
+body {
+  --white: #ffffff;
+  --light: #f2f2f2;
+  --dark: #1e1c1c;
+  --accent: #a00ad7b0;
+  --accent-light: #a00ad73a;
+  --gray: #b7b0b0;
+  --darkGray: #747575fb;
+  --lightGray: #f2f2f2f1;
+}
+body.dark-theme {
+  --white: #191919;
+  --light: #2a2a2a;
+  --dark: #ede7e7;
+  --accent: #a00ad7;
+  --accent-light: #a00ad73a;
+  --gray: #d9d9d9;
+  --darkGray: #f3f3f3fb;
+  --lightGray: #fffffff1;
+}
+
+body.sans {
+  font-family: "Roboto", serif;
+}
+
+body.serif {
+  font-family: "PT Serif", serif;
+}
+
+body.mono {
+  font-family: "Ubuntu Mono", monospace;
+}
+
+/*=============== BASE ===============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+body {
+  background-color: var(--white);
+}
+
+body,
+button,
+input,
+textarea {
+  font-size: var(--normal-font-size);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--white);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+a:focus {
+  outline: var(--accent) 2px solid;
+}
+
+a.button {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== LAYOUT ===============*/
+.container {
+  max-width: 678px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen {
+  .container {
+    padding: 1rem 1.5rem;
+  }
+}
+
+/*=============== REUSABLE CLASSES ===============*/
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.flex-container {
+  display: flex;
+}
+.flex-container.jc-sb {
+  justify-content: space-between;
+}
+.flex-container.ai-c {
+  align-items: center;
+}
+
+body.sans {
+  font-family: "Roboto", serif;
+}
+
+body.serif {
+  font-family: "Poppins", sans-serif;
+}
+
+body.mono {
+  font-family: "Ubuntu Mono", monospace;
+}
+
+.gray-text {
+  color: var(--gray);
+  font-weight: 400;
+}
+.accent-text {
+  color: var(--accent);
+  font-weight: 700;
+}

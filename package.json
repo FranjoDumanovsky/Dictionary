@@ -1,0 +1,47 @@
+{
+  "name": "Dictionary",
+  "version": "1.0.0",
+  "homepage": "https://franjodumanovsky.github.io/Dictionary",
+  "main": "app.jsx",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Frontend Mentor Challenge",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^2.1.0",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.8",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^5.0.0",
+    "prettier": "^2.8.4",
+    "sass": "^1.58.0",
+    "vite": "^3.1.4"
+  },
+  "dependencies": {
+    "axios": "^1.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "react-select": "^5.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranjoDumanovsky/Dictionary.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FranjoDumanovsky/Dictionary/issues"
+  }
+}
