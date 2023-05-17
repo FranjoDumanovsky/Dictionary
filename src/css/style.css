@@ -20,7 +20,7 @@
 body {
   --white: #ffffff;
   --light: #f2f2f2;
-  --dark: #1e1c1c;
+  --dark: #262525;
   --accent: #a00ad7b0;
   --accent-light: #a00ad73a;
   --gray: #b7b0b0;
@@ -31,7 +31,7 @@ body.dark-theme {
   --white: #191919;
   --light: #2a2a2a;
   --dark: #ede7e7;
-  --accent: #a00ad7;
+  --accent: #c166e2;
   --accent-light: #a00ad73a;
   --gray: #d9d9d9;
   --darkGray: #f3f3f3fb;

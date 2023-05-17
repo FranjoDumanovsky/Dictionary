@@ -171,3 +171,24 @@ body.dark-theme .search-word {
   text-decoration: underline;
   color: var(--dark);
 }
+
+/** Error messages */
+
+.error-container .error-title {
+  color: var(--dark);
+  font-size: var(--large-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: 0.425rem;
+}
+
+.error-container .error-message {
+  color: var(--accent);
+  font-size: var(--normal-font-size);
+}
+
+body.dark-theme .error-container .error-title {
+  color: var(--accent);
+}
+body.dark-theme .error-container .error-message {
+  color: var(--dark);
+}
